@@ -1,0 +1,167 @@
+/* 4.打印下面图形。
+A
+AB
+ABC
+ABCD
+ABCDE
+ABCDEF
+ABCDEFG
+ABCDEFGH
+ABCDEFGHI
+ABCDEFGHIJ
+ABCDEFGHIJK
+ABCDEFGHIJKL
+ABCDEFGHIJKLM
+ABCDEFGHIJKLMN
+ABCDEFGHIJKLMNO
+ABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNOPQ
+ABCDEFGHIJKLMNOPQR
+ABCDEFGHIJKLMNOPQRS
+ABCDEFGHIJKLMNOPQRST
+ABCDEFGHIJKLMNOPQRSTU
+ABCDEFGHIJKLMNOPQRSTUV
+ABCDEFGHIJKLMNOPQRSTUVW
+ABCDEFGHIJKLMNOPQRSTUVWX
+ABCDEFGHIJKLMNOPQRSTUVWXY
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  用3种方法
+ */
+/*
+#include "stdio.h"
+void main()
+{
+	int i,j;
+	for(i=1;i<=26;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%c",j+64);
+		}
+		printf("\n");
+	}
+
+} */
+/*
+#include "stdio.h"
+void main()
+{
+	int i,j;
+	for(i=65;i<=90;i++)
+	{
+		for(j=65;j<=i;j++)
+		{
+			printf("%c",j);
+		}
+		printf("\n");
+	}
+
+}
+
+*/
+/*
+#include "stdio.h"
+void main()
+{
+	int i,j;
+	for(i='A';i<='Z';i++)
+	{
+		for(j='A';j<=i;j++)
+		{
+			printf("%c",j);
+		}
+		printf("\n");
+	}
+
+}  */
+/*
+A
+AB
+ABC
+ABCD
+ABCDE
+ABCDEF
+ABCDEFG
+ABCDEFGH
+ABCDEFGHI
+ABCDEFGHIJ
+ABCDEFGHIJK
+ABCDEFGHIJKL
+ABCDEFGHIJKLM
+ABCDEFGHIJKLMN
+ABCDEFGHIJKLMNO
+ABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNOPQ
+ABCDEFGHIJKLMNOPQR
+ABCDEFGHIJKLMNOPQRS
+ABCDEFGHIJKLMNOPQRST
+ABCDEFGHIJKLMNOPQRSTU
+ABCDEFGHIJKLMNOPQRSTUV
+ABCDEFGHIJKLMNOPQRSTUVW
+ABCDEFGHIJKLMNOPQRSTUVWX
+ABCDEFGHIJKLMNOPQRSTUVWXY
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXY
+ABCDEFGHIJKLMNOPQRSTUVWX
+ABCDEFGHIJKLMNOPQRSTUVW
+ABCDEFGHIJKLMNOPQRSTUV
+ABCDEFGHIJKLMNOPQRSTU
+ABCDEFGHIJKLMNOPQRST
+ABCDEFGHIJKLMNOPQRS
+ABCDEFGHIJKLMNOPQR
+ABCDEFGHIJKLMNOPQ
+ABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNO
+ABCDEFGHIJKLMN
+ABCDEFGHIJKLM
+ABCDEFGHIJKL
+ABCDEFGHIJK
+ABCDEFGHIJ
+ABCDEFGHI
+ABCDEFGH
+ABCDEFG
+ABCDEF
+ABCDE
+ABCD
+ABC
+AB
+A
+*/
+/*
+#include "stdio.h"
+void main()
+{
+	int i,j;
+	for(i=-25;i<=25;i++)
+	{
+		for(j=-1;j<=24-abs(i);j++)
+		{
+			printf("%c",j+66);
+		}
+		printf("\n");
+	}
+
+}
+*/
+/*图⑤5.打印下面图形。
+5.打印下面图形。
+		*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,j;
+    for(i=0;j<=25;i++)
+    {
+        for(j=0;j<=25-i;j++)
+        {
+            printf(" ");
+        }
+        for(j=0;j<i;j++)
+        {
+            printf("%c",'A'+j);
+
+        }
+        printf("\n");
+    }
+}
